@@ -36,7 +36,7 @@
       <ul>
         <li>
           <form class="" method="post">
-            <p>Se connecter:</p>
+            <p>Se connecter: Coucou</p>
             <br>
             <label for="email-connect">Email</label>
             <input id="email-connect" type="email" name="connect-email" value="">
