@@ -1,0 +1,97 @@
+.create-room-title{
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.create-room-form{
+  width: 80%;
+  margin-top: 15px;
+  background-color: #CCC;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding: 15px 15px 15px 15px;
+}
+
+.create-room-form label{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.room-name-input{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border: none;
+  font-family: "Open Sans";
+  font-weight: 300;
+  width: 250px;
+  height: 30px;
+}
+
+.create-room-button-submit{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: #12BDAD;
+  margin-top: 35px;
+  border-radius: 4px;
+  width: auto !important;
+  height: auto !important;
+  padding: 10px 30px 10px 30px;
+  color: white;
+}
+
+.checkbox-list{
+  overflow-y: scroll;
+  max-height: 250px;
+  padding: 15px 30px 15px 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: white;
+  width: 80%;
+}
+
+.all-checkbox-list{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-list, .second-list{
+  width: 100%;
+}
+
+.first-list li, .second-list li{
+  display: block;
+  margin: 7px 0 7px 0;
+}
+
+.member{
+  display: inline !important;
+}
+
+.checkbox{
+  height: 15px;
+  width: 15px;
+}

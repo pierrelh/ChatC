@@ -1,0 +1,29 @@
+.user{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-weight: "300";
+  font-size: 1.5em;
+  width: auto;
+  display: block;
+  padding: 15px 0 15px 15px;
+  margin: 15px 15px 15px 15px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.user-one{
+  background-color: #2f9d66;
+}
+
+.user-two{
+  background-color: #12BDAD;
+}
+
+.user:hover{
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background-color: black;
+  padding-left: 25px;
+}

@@ -1,0 +1,40 @@
+.sidebar{
+  position: absolute;
+  min-height: 100%;
+  max-height: 100%;
+  width: 15%;
+  z-index: 1;
+  background-color: #12BDAD;
+}
+
+.sidebar-list{
+  position: relative;
+  width: 100%;
+}
+
+.sidebar-list li{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sidebar-list li a{
+  position: relative;
+  padding: 15px 0 15px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 1.5em;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.sidebar-list li a:hover{
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background-color: black;
+  padding-left: 25px;
+}

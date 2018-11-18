@@ -1,0 +1,49 @@
+.forms{
+  padding: 0 15% 0 15%;
+  margin-top: 5%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80%;
+  width: 80%;
+  background-color: #002245;
+}
+
+.forms ul{
+  position: relative;
+  top: 25%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+label, p{
+  color: white;
+  font-family: "Open sans";
+  font-size: 1.5em;
+}
+
+input{
+  background-color: #919191;
+  font-family: "Open sans";
+  max-width: 100%;
+  min-width: 100%;
+  border: none;
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+.submit-button{
+  background-color: #3999dc;
+  color: white;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  cursor: pointer;
+}

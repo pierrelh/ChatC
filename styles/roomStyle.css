@@ -1,0 +1,100 @@
+.add-room{
+  margin: 15px 15px 15px 15px;
+  padding: 15px 15px 15px 15px;
+  width: auto;
+  height: auto;
+  background-color: #909090;
+}
+
+.add-room-list{
+  list-style: none;
+}
+
+.add-room-list li{
+  width: 100%;
+}
+
+.add-room-button{
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 400;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-decoration: none;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 2em;
+  cursor: pointer;
+  border: none;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.add-room-text{
+  margin-top: 15px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 170px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+.add-room-button:hover{
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+  font-size: 2.2em;
+}
+
+.add-room-text:hover{
+  text-decoration: underline;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.room{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-weight: "300";
+  font-size: 1.5em;
+  width: auto;
+  display: block;
+  padding: 15px 0 15px 15px;
+  margin: 15px 15px 15px 15px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.room-one{
+  background-color: #2f9d66;
+}
+
+.room-two{
+  background-color: #12BDAD;
+}
+
+.room:hover{
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background-color: black;
+  padding-left: 25px;
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+#chat-zone{
+  position: absolute;
+  z-index: 999;
+  background-color:white;
+  left: 15%;
+  overflow-y: scroll;
+  width: 85%;
+  height: 86%;
+}
