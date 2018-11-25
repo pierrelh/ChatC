@@ -50,3 +50,20 @@
   cursor: pointer;
   background-color: #12BDAD;
 }
+
+.load-more-messages{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  color: white;
+  font-family: "Open sans";
+  font-size: 1.2em;
+  background-color: #12BDAD;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  margin: 10px auto 10px auto;
+  cursor: pointer;
+}
