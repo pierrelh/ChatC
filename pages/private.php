@@ -39,9 +39,6 @@ if ($_SESSION['user_id'] != 1 && $_SESSION['user_id'] != 2) {
 
     <script type="text/javascript">
 
-        var element = document.getElementById('chat-zone');
-        element.scrollTop = element.scrollHeight;
-
         $('#send').click(function(e){
           e.preventDefault();
 
@@ -54,37 +51,39 @@ if ($_SESSION['user_id'] != 1 && $_SESSION['user_id'] != 2) {
                   data : "message=" + message
               });
 
-             $('#chat-zone').append("<p style='margin-right: 15px; margin-left: auto;' class='message my-message'>" + "Vous <br>" + "Il y a moins d'une minute. <br>" + message + "</p>");
-             var element = document.getElementById('chat-zone');
-             element.scrollTop = element.scrollHeight;
+              var premierID = parseInt( $('#chat-zone p:last').attr('id')) + 1;
+
+              $('#chat-zone').append("<p id='" + premierID + "' style='margin-right: 15px; margin-left: auto;' class='message my-message'>" + "Vous <br>" + "Il y a moins d'une minute. <br>" + message + "</p>");
+              var element = document.getElementById('chat-zone');
+              element.scrollTop = element.scrollHeight;
           }
-      });
+        });
 
-      function charger(){
+        function charger(){
+          setTimeout( function(){
 
-        setTimeout( function(){
+              var premierID = $('#chat-zone p:last').attr('id');
 
-            var premierID = $('#chat-zone p:last').attr('id'); // on récupère l'id le plus récent
+              $.ajax({
+                  url : "../functions/getChatPrivate.php?id=" + premierID,
+                  type : "GET",
+                  success : function(html){
+                      $('#chat-zone').append(html);
+                          $('#chat-zone').append(html);
+                          var element = document.getElementById('chat-zone');
+                          if (element.scrollHeight - element.scrollTop < 800) {
+                            element.scrollTop = element.scrollHeight;
+                          }
+                  }
+              });
+              charger();
+          }, 5000);
+      }
 
-            $.ajax({
-                url : "../functions/getChatPrivate.php?id=" + premierID, // on passe l'id le plus récent au fichier de chargement
-                type : "GET",
-                success : function(html){
-                    $('#chat-zone').append(html);
-                    var element = document.getElementById('chat-zone');
-                    element.scrollTop = element.scrollHeight;
-                }
-            });
+      charger();
 
-            charger();
-
-        }, 5000);
-
-    }
-
-    charger();
-
-
+          var element = document.getElementById('chat-zone');
+          element.scrollTop = element.scrollHeight;
 
     </script>
 
