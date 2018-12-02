@@ -30,10 +30,6 @@ resource "heroku_app" "production" {
   config_vars {
     FOOBAR = "baz"
   }
-
-  buildpacks = [
-    "heroku/go",
-  ]
 }
 
 # Create a Heroku pipeline
