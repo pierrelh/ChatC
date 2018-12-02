@@ -25,8 +25,11 @@
 **/*.tfstate
 **/*.tfstate.*
 
+<<<<<<< HEAD
 ./functions/getDB.php
 
+=======
+>>>>>>> dev
 # Crash log files
 crash.log
 
