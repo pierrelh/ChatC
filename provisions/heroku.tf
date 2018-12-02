@@ -20,6 +20,10 @@ resource "heroku_app" "staging" {
   config_vars {
     FOOBAR = "baz"
   }
+
+  buildpacks = [
+    "heroku/php",
+  ]
 }
 
 # Create new app
@@ -30,6 +34,10 @@ resource "heroku_app" "production" {
   config_vars {
     FOOBAR = "baz"
   }
+
+  buildpacks = [
+    "heroku/php",
+  ]
 }
 
 # Create a Heroku pipeline
