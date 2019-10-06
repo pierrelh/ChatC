@@ -1,5 +1,5 @@
 <?php
-  include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/checkMaintenancy.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/checkMaintenancy.php");
   check(0);
  ?>
 

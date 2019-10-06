@@ -12,11 +12,11 @@ session_start();
   </head>
   <body>
     <?php
-      include_once($_SERVER['DOCUMENT_ROOT']."/chatC/assets/sidebar.php");
-      include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getUsers.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/assets/sidebar.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getUsers.php");
       if (isset($_POST['create-room-button'])) {
         if ($_POST['room-name'] != '') {
-          include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getRooms.php");
+          include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getRooms.php");
           createRoom();
         }else {
           echo "Veuillez donner un nom à votre room.";

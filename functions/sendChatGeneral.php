@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getDB.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getDB.php");
 
       $message = htmlentities($_POST['message'],ENT_QUOTES);
       $bdd = connect();

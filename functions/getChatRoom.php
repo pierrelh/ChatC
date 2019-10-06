@@ -1,5 +1,5 @@
 <?php
-  include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getDB.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getDB.php");
 
   function checkRoom(){
     $roomCodename = $_GET['room_codename'];
@@ -8,7 +8,7 @@
     $requser-> execute();
     $requser = $requser->fetchAll(PDO::FETCH_NUM);
     if (empty($requser)) {
-      header("Location:http://localhost/chatC/pages/404.php");
+      header("Location:http://localhost/all/chatC/pages/404.php");
     }else {
       $regex = "/\b".$_SESSION['user_id']."\b/i";
       $userRooms = [];
@@ -18,7 +18,7 @@
         }
       }
       if (empty($userRooms)) {
-        header("Location:http://localhost/chatC/pages/404.php");
+        header("Location:http://localhost/all/chatC/pages/404.php");
       }
     }
   }
@@ -45,7 +45,7 @@
   }
 
   function getRoomMessage(){
-    include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getTime.php");
+    include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getTime.php");
     $usersNames = [];
     $roomCodename = $_GET['room_codename'];
     $bdd = connect();

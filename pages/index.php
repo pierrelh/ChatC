@@ -13,12 +13,12 @@ session_start();
   </head>
   <body>
     <?php
-      include_once($_SERVER['DOCUMENT_ROOT']."/chatC/assets/sidebar.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/assets/sidebar.php");
     ?>
 
     <div id="chat-zone">
       <?php
-        include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getUsers.php");
+        include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getUsers.php");
         getUserInfos();
       ?>
     </div>

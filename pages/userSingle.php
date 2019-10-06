@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getChatUsers.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getChatUsers.php");
   checkUser();
 ?>
 
@@ -15,7 +15,7 @@
   </head>
   <body>
     <?php
-      include_once($_SERVER['DOCUMENT_ROOT']."/chatC/assets/sidebar.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/assets/sidebar.php");
     ?>
 
     <div id="chat-zone">
@@ -30,7 +30,7 @@
     </div>
 
     <?php
-      include_once($_SERVER['DOCUMENT_ROOT']."/chatC/assets/interface.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/assets/interface.php");
     ?>
 
     <script type="text/javascript">

@@ -1,5 +1,5 @@
 <?php
-  include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getDB.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getDB.php");
 
   function getAllUsers($choice){
     $bdd = connect();
@@ -10,9 +10,9 @@
       $i = 0;
       foreach ($allUsers as $user) {
         if ( $i%2 == 0) {
-          echo "<a class='user user-one' href='http://localhost/chatC/pages/userSingle.php?user_codename=$user[3]'>" . $user[1]. " " . $user[0] . "</a>";
+          echo "<a class='user user-one' href='http://localhost/all/chatC/pages/userSingle.php?user_codename=$user[3]'>" . $user[1]. " " . $user[0] . "</a>";
         }else {
-          echo "<a class='user user-two' href='http://localhost/chatC/pages/userSingle.php?user_codename=$user[3]'>" . $user[1]. " " . $user[0] . "</a>";
+          echo "<a class='user user-two' href='http://localhost/all/chatC/pages/userSingle.php?user_codename=$user[3]'>" . $user[1]. " " . $user[0] . "</a>";
         }
         $i++;
       }

@@ -1,5 +1,5 @@
 <?php
-  include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getDB.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getDB.php");
 
   function check($location){
     $bdd = connect();
@@ -9,10 +9,10 @@
     $maintenancy = $maintenancy[0];
     if ($maintenancy[1] == 1) {
       if ($location == 0) {
-        header("Location:http://localhost/chatC/pages/maintenance.php");
+        header("Location:http://localhost/all/chatC/pages/maintenance.php");
       }
     }elseif ($location == 1) {
-      header("Location:http://localhost/chatC/pages/index.php");
+      header("Location:http://localhost/all/chatC/pages/index.php");
     }
   }
 

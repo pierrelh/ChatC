@@ -1,5 +1,5 @@
 <?php
-  include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getDB.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getDB.php");
 
   function createRoom(){
     $roomName = $_POST['room-name'];
@@ -29,9 +29,9 @@
     $i = 0;
     foreach ($userRooms as $key => $value) {
       if ($i%2 == 0) {
-        echo "<a class='room room-one' href='http://localhost/chatC/pages/roomSingle.php?room_codename=$value[3]'>". $value[1] ."</a>";
+        echo "<a class='room room-one' href='http://localhost/all/chatC/pages/roomSingle.php?room_codename=$value[3]'>". $value[1] ."</a>";
       }else {
-        echo "<a class='room room-two' href='http://localhost/chatC/pages/roomSingle.php?room_codename=$value[3]'>". $value[1] ."</a>";
+        echo "<a class='room room-two' href='http://localhost/all/chatC/pages/roomSingle.php?room_codename=$value[3]'>". $value[1] ."</a>";
       }
       $i++;
     }

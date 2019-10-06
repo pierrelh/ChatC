@@ -7,7 +7,7 @@
     <title></title>
     <?php
 
-    include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getAccount.php");
+    include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getAccount.php");
 
     if (isset($_POST['connect'])) {
       if (isset($_POST['connect-email']) && $_POST['connect-email'] !== '' && isset($_POST['connect-password']) && $_POST['connect-password'] !== '' ) {

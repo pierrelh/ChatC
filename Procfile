@@ -1,1 +1,1 @@
-web: chatC
+web: heroku-php-apache2

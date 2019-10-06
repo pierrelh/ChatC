@@ -1,5 +1,5 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getDB.php");
+include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getDB.php");
 
 function checkUser(){
   $userCodename = $_GET['user_codename'];
@@ -8,7 +8,7 @@ function checkUser(){
   $requser-> execute();
   $requser = $requser->fetchAll(PDO::FETCH_NUM);
   if (empty($requser)) {
-    header("Location:http://localhost/chatC/pages/404.php");
+    header("Location:http://localhost/all/chatC/pages/404.php");
   }else {
     $requser = $requser[0];
     $chatCodeNameOne = $_SESSION['user_codename'] . $requser[0];
@@ -25,7 +25,7 @@ function checkUser(){
 }
 
 function getChatMessage(){
-  include_once($_SERVER['DOCUMENT_ROOT']."/chatC/functions/getTime.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getTime.php");
   $chatCodeNameOne = $_SESSION['user_codename'] . $_GET['user_codename'];
   $chatCodeNameTwo =  $_GET['user_codename'] . $_SESSION['user_codename'];
   $bdd = connect();
