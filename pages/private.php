@@ -1,5 +1,4 @@
 <?php
-session_start();
 if ($_SESSION['user_id'] != 1 && $_SESSION['user_id'] != 2) {
   header("Location:./index.php");
 }else {
