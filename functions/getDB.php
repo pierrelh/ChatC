@@ -1,13 +1,14 @@
 <?php
 
   function connect(){
-    try{
-      $bdd = new PDO('mysql:host=127.0.0.1;dbname=chat', 'root', '');
-      return $bdd;
+    $db_url = getenv("DATABASE_URL") ?: "postgres://user:pass@host:port/dbname";
+    $db = pg_connect($db_url);
+    if($db){
+      return $db;
+    }else {
+        die('Erreur : '.$e->getMessage());
     }
-    catch(Exception $e){
-      die('Erreur : '.$e->getMessage());
-    }
+
   }
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getDB.php");
+include_once($_SERVER['DOCUMENT_ROOT']."/functions/getDB.php");
 
 function checkUser(){
   $userCodename = $_GET['user_codename'];
@@ -25,7 +25,7 @@ function checkUser(){
 }
 
 function getChatMessage(){
-  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getTime.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/functions/getTime.php");
   $chatCodeNameOne = $_SESSION['user_codename'] . $_GET['user_codename'];
   $chatCodeNameTwo =  $_GET['user_codename'] . $_SESSION['user_codename'];
   $bdd = connect();

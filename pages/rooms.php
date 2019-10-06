@@ -12,8 +12,8 @@ session_start();
   </head>
   <body>
     <?php
-      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/assets/sidebar.php");
-      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getRooms.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/assets/sidebar.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/functions/getRooms.php");
     ?>
 
     <div id="chat-zone">

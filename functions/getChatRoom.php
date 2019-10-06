@@ -1,5 +1,5 @@
 <?php
-  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getDB.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/functions/getDB.php");
 
   function checkRoom(){
     $roomCodename = $_GET['room_codename'];

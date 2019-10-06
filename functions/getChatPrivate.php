@@ -1,6 +1,6 @@
 <?php
-  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getDB.php");
-  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getTime.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/functions/getDB.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/functions/getTime.php");
   $bdd = connect();
 
   if (empty($_GET['id'])) {

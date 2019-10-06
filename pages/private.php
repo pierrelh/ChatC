@@ -20,7 +20,7 @@ if ($_SESSION['user_id'] != 1 && $_SESSION['user_id'] != 2) {
   <body>
 
     <?php
-      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/assets/sidebar.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/assets/sidebar.php");
     ?>
 
     <div id="chat-zone">
@@ -29,12 +29,12 @@ if ($_SESSION['user_id'] != 1 && $_SESSION['user_id'] != 2) {
       </form>
 
     <?php
-      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getChatPrivate.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/functions/getChatPrivate.php");
     ?>
     </div>
 
     <?php
-      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/assets/interface.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/assets/interface.php");
     ?>
 
     <script type="text/javascript">

@@ -1,5 +1,5 @@
 <?php
-  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getDB.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/functions/getDB.php");
 
   function createRoom(){
     $roomName = $_POST['room-name'];

@@ -1,6 +1,6 @@
 <?php
-  
-  include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getDB.php");
+
+  include_once($_SERVER['DOCUMENT_ROOT']."/functions/getDB.php");
 
   function createAccount(){
     $name = $_POST['create-name'];

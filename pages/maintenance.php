@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../styles/maintenanceStyle.css">
     <?php
-      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/checkMaintenancy.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/functions/checkMaintenancy.php");
       check(1);
       $maintenancy = getHours();
      ?>

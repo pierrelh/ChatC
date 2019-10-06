@@ -14,7 +14,7 @@
   <body>
 
     <?php
-      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/assets/sidebar.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/assets/sidebar.php");
     ?>
 
     <div id="chat-zone">
@@ -23,12 +23,12 @@
       </form>
 
       <?php
-        include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/functions/getChatGeneral.php");
+        include_once($_SERVER['DOCUMENT_ROOT']."/functions/getChatGeneral.php");
       ?>
     </div>
 
     <?php
-      include_once($_SERVER['DOCUMENT_ROOT']."/all/chatC/assets/interface.php");
+      include_once($_SERVER['DOCUMENT_ROOT']."/assets/interface.php");
     ?>
 
     <script type="text/javascript">
