@@ -32,7 +32,7 @@
       foreach ($val as $key => $value) {
         $requser = ($value['user_id']);
       }
-      setcookie("SESSION_ID", $requser, time()+3600);
+      setcookie("user_id", $requser, time()+3600);
       echo "<script>window.location='./pages/';</script>";
     }
   }
@@ -48,7 +48,7 @@
       $requser = ($value['user_id']);
     }
     if ($requser != false) {
-      setcookie("SESSION_ID", $requser, time()+3600);
+      setcookie("user_id", $requser, time()+3600);
       echo "<script>window.location='./pages/';</script>";
     }else{
       echo "Ce compte n'existe pas.";
