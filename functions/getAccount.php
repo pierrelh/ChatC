@@ -8,10 +8,18 @@
 
   function createAccount(){
     $email = $_POST['create-email'];
-    $requser = $bdd->query('SELECT * FROM users WHERE user_email = "'.$email.'"');
-    $requser-> execute();
-    $duplicata = $requser->fetchAll(PDO::FETCH_NUM);
-    if ($duplicata !== []) {
+    $selectSql = "SELECT * FROM users WHERE user_email='".$email."'";
+    $db = connect();
+    $result =  pg_query($db, $selectSql);
+    $val = pg_fetch_all($result);
+    foreach ($val as $key => $value) {
+      $duplicata = ($value['user_email']);
+    }
+
+    // $requser = $bdd->query('SELECT * FROM users WHERE user_email = "'.$email.'"');
+    // $requser-> execute();
+    // $duplicata = $requser->fetchAll(PDO::FETCH_NUM);
+    if ($duplicata != false) {
       echo "Cette adresse mail est déjà utilisée.";
     }else{
       $filtered = array_map('map_entities', $_POST);
@@ -73,7 +81,7 @@
     $rand = mt_rand(0, $max);
     $str .= $characters[$rand];
   }
-  $bdd = connect();
+  $db = connect();
   $selectSql = "SELECT * FROM users WHERE user_codename='".$str."'";
   $result =  pg_query($db, $selectSql);
   foreach ($val as $key => $value) {
