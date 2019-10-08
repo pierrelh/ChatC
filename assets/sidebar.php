@@ -1,6 +1,6 @@
 <?php
-  include_once($_SERVER['DOCUMENT_ROOT']."/functions/checkMaintenancy.php");
-  check(0);
+  // include_once($_SERVER['DOCUMENT_ROOT']."/functions/checkMaintenancy.php");
+  // check(0);
  ?>
 
 <link rel="stylesheet" href="../styles/sidebarStyle.css">
