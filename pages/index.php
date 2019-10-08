@@ -13,6 +13,7 @@
     ?>
 
     <div id="chat-zone">
+      <?php var_dump($_COOKIE('SESSION_ID')) ?>
     </div>
   </body>
 </html>
