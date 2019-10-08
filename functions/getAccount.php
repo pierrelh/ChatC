@@ -40,9 +40,9 @@
   function connectAccount(){
     $email = $_POST['connect-email'];
     $password = crypt($_POST['connect-password'], '48Dudzpx7#Fpa8003s8P@*9s%T_ZA');
-    $selectSql = "SELECT user_id FROM users WHERE user_email='".$email."' && user_password = '".$password."'";
+    $selectSql = "SELECT user_id FROM users WHERE user_email = $1 AND user_password = $2";
     $db = connect();
-    $result =  pg_query($db, $selectSql);
+    $result =  pg_query_params($db, $selectSql, array($email, $password));
     $val = pg_fetch_all($result);
     foreach ($val as $key => $value) {
       $requser = ($value['user_id']);
