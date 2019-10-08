@@ -13,10 +13,6 @@
     ?>
 
     <div id="chat-zone">
-      <?php
-        include_once($_SERVER['DOCUMENT_ROOT']."/functions/getUsers.php");
-        getUserInfos();
-      ?>
     </div>
   </body>
 </html>

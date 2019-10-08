@@ -54,13 +54,4 @@
           </li>";
     }
   }
-
-  function getUserInfos(){
-    $bdd = connect();
-    $requser = $bdd->query('SELECT user_name, user_forename FROM users WHERE user_id = "'.$_SESSION['user_id'].'"');
-    $requser-> execute();
-    $userInfos = $requser->fetchAll(PDO::FETCH_NUM);
-    $userInfos = $userInfos[0];
-    echo "<p class='welcome-txt'>Bienvenue " . $userInfos[1] . " " . $userInfos[0] . "</p>";
-  }
 ?>

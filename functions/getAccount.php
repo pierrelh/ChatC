@@ -26,7 +26,7 @@
       $userCodename = randomString($db);
       $selectSql = "INSERT INTO users (user_name, user_forename, user_email, user_password, user_codename) VALUES ($1, $2, $3, $4, $5)";
       $result =  pg_query_params($db, $selectSql, array($_POST['create-name'], $_POST['create-forename'], $_POST['create-email'], $password, $userCodename));
-      $selectSql = "SELECT user_id FROM users WHERE user_email='".$email."' && user_password = '".$password."'";
+      $selectSql = "SELECT user_id FROM users WHERE user_email='".$email."' AND user_password = '".$password."'";
       $result =  pg_query($db, $selectSql);
       $val = pg_fetch_all($result);
       foreach ($val as $key => $value) {
